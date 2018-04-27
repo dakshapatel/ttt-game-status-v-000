@@ -27,7 +27,9 @@ def full?(board)
   end
 end
 
-def draw?
+def draw?(board)
+  if board.none? {|won_board| won_board ==  && |full_board| full_board}
+    return true
 end
 
 def over?

@@ -21,7 +21,7 @@ def won?(board)
 
 
    WIN_COMBINATIONS.all? |win_combo|
-     if win_combo.all? == true
+     if win_combo.all? = true
        return win_combo
     end
 

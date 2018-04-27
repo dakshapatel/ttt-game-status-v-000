@@ -19,11 +19,12 @@ def won?(board)
   if board.empty? == true
     return false
 
-   WIN_COMBINATIONS.select do |win_comb|
+   WIN_COMBINATIONS.each do |win_comb|
+     if WIN_COMBINATIONS.all?
      board[win_comb[0]] == board[win_comb[1]] && board[win_comb[2]]
 
 
-  
+
 
 
   end

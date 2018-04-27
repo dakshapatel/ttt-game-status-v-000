@@ -16,10 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.empty? == true
-    return false
-
-
+  WIN_COMBINATIONS.each do |win_combination|
+     if win_combination.all? {|location| board[location] == "X" || win_combination.all? {|location| board[location] == "O"}}
+     return win_combination
+     end
+   end
 
 end
 end

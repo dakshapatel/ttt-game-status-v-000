@@ -15,9 +15,15 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won?(board)
-
-
+def full?(board)
+   if board.all? {|spot| spot == "X" || spot == "O"}
+     return true
+    end
+  WIN_COMBINATIONS.each do |win_combination|
+    if win_combination.any? {|location| board[location] == " " || win_combination.any? {|location| board[location] == "" || win_combination.any? {|location| board[location] == nil}}}
+      return false
+    end
+  end
 end
 
 
@@ -43,5 +49,5 @@ elsif
 end
 
 def winner(board)
-  
+
 end

@@ -16,6 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-if WIN_COMBINATIONS
+  if WIN_COMBINATIONS
   true
+
+end
+  end
 end

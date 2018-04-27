@@ -38,8 +38,13 @@ end
 def over?(board)
 if won?(board) == true || draw?(board) == true || full?(board) == true
   return true
+elsif
   end
 end
 
-def winner
+def winner(board)
+ if won?(board) == "X"
+  return "X"
+elsif won?(board) == "O"
+end   
 end

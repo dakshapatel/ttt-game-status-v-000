@@ -69,6 +69,4 @@ if won?(board) == true || draw?(board) == true || full?(board) == true
 
 end
 
-def winner(board)
 
-end

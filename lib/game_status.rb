@@ -49,7 +49,7 @@ end
 
 def over?(board)
   binding.pry
-   won?(board) ==  || draw?(board) == true
+   won?(board) == true || draw?(board) == true
 end
 
 

@@ -20,8 +20,8 @@ def won?(board)
     return false
 
 
-   WIN_COMBINATIONS.each do |win_comb|
-     if win_combo.all? board[win_combo[0]] == board[win_combo[1]] && board[win_combo[2]]
+   WIN_COMBINATIONS.all? |win_combo|
+     if win_combo.all?
        return win_combo
     end
 

@@ -21,8 +21,8 @@ def won?(board)
 
 
    WIN_COMBINATIONS.each do |win_comb|
-     if win_comb.all? board[win_combo[0]] == board[win_combo[1]] && board[win_combo[2]]
-       return win_comb
+     if win_combo.all? board[win_combo[0]] == board[win_combo[1]] && board[win_combo[2]]
+       return win_combo
     end
 
 

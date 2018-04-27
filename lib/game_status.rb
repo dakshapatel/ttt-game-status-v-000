@@ -28,8 +28,10 @@ def full?(board)
 end
 
 def draw?(board)
-  if board.none? {|won_board| won_board ==  && |full_board| full_board}
+  if won?(board) == false && full?(board) == true
     return true
+  elsif won?(board) == false && full?(board) == false
+    return false
 end
 
 def over?

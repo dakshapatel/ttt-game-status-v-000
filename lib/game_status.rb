@@ -53,12 +53,18 @@ def over?(board)
 end
 
 
-
 def winner(board)
-  if won?(board) != nil
-    winner = board[won?(board)[0]]
+  WIN_COMBINATIONS.each do |win_combination|
+    if win_combination.all? {|location| board[location] == "X"}
+      return "X"
+    elsif win_combination.all? {|location| board[location] == "O"}
+      return "O"
+    end
+  end
+  if won?(board) == false
+      return nil
+  end
 
-      return token [0,4,8]
-  
-  end
-  end
+
+
+

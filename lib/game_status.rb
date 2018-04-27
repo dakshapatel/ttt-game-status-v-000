@@ -54,6 +54,7 @@ end
 
 
 def winner(board)
+  binding.pry
  if won?(board) {|token| token == "X" || token == "O"}
   return true
 end

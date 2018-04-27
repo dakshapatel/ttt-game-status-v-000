@@ -55,7 +55,7 @@ end
 
 def winner(board)
 
- if won?(board) {|token| token == "X" || token == "O"}
+ if won?(board) == false
   return token [0,4,8]
 end
 end

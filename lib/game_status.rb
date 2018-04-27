@@ -19,7 +19,7 @@ def won?(board)
   if board.empty? == true
     return false
 
-
+end
    WIN_COMBINATIONS.each do |win_comb|
      if win_combination.all? {|location| board[location] == "X" || win_combination.all? {|location| board[location] == "O"}}
        return win_combination
@@ -28,6 +28,6 @@ def won?(board)
 
 
 
-
+end
 end
 end

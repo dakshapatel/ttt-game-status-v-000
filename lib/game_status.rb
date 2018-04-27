@@ -23,3 +23,4 @@ def won?(board)
      board[win_comb[3]] == board[win_comb[4]] && board[win_comb[5]]
   end
 end
+end

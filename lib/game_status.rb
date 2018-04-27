@@ -36,19 +36,6 @@ end
 
 
 
-
-def full?(board)
-   if board.all? {|spot| spot == "X" || spot == "O"}
-     return true
-    end
-  WIN_COMBINATIONS.each do |win_combination|
-    if win_combination.any? {|location| board[location] == " " || win_combination.any? {|location| board[location] == "" || win_combination.any? {|location| board[location] == nil}}}
-      return false
-    end
-  end
-end
-
-
 def full?(board)
   if board.all? {|spot| spot == "X" || spot == "O"}
     return true

@@ -18,9 +18,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   if board.empty? == true
     return false
+  end
    WIN_COMBINATIONS.select do |win_comb|
      board[win_comb[0]] == board[win_comb[1]] && board[win_comb[2]]
      board[win_comb[3]] == board[win_comb[4]] && board[win_comb[5]]
   end
-end
 end

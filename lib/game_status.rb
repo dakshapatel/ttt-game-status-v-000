@@ -32,12 +32,13 @@ def draw?(board)
     return true
   elsif won?(board) == false && full?(board) == false
     return false
-  elseif won?(board)
-    return false
   end
 end
 
-def over?
+def over?(board)
+if won?(board) == true || draw?(board) == true || full?(board) == true
+  return true
+  end
 end
 
 def winner

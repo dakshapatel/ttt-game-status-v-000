@@ -16,13 +16,14 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+
 
 end
 
 
 def full?(board)
   if board.all? {|spot| spot == "X" || spot == "O"}
+    return true
   end
 end
 

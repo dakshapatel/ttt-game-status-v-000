@@ -57,5 +57,8 @@ end
 def winner(board)
   if won?(board) != nil
     winner = board[won?(board)[0]]
+
+      return token [0,4,8]
+  
   end
   end

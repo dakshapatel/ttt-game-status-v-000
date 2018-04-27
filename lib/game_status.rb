@@ -48,7 +48,8 @@ def draw?(board)
 end
 
 def over?(board)
-   won?(board) == true || draw?(board) == true 
+  binding.pry
+   won?(board) ==  || draw?(board) == true
 end
 
 

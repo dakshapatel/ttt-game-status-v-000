@@ -34,8 +34,6 @@ end
   end
 
 
-
-
 def full?(board)
   if board.all? {|spot| spot == "X" || spot == "O"}
     return true
@@ -55,3 +53,11 @@ if won?(board) == true || draw?(board) == true || full?(board) == true || won?(b
   return true
 end
 end
+
+
+def winner(board)
+ if won?(board) {|token| token == "X" || token == "O"}
+  return true
+end
+end
+  

@@ -28,6 +28,7 @@ end
 
 def full?(board)
   if board.all? {|spot| spot == "X" || spot == "O"}
+  end
 end
 
 def draw?

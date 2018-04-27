@@ -24,3 +24,17 @@ def won?(board)
 
 end
 end
+
+
+def full?(board)
+  if board.all? {|spot| spot == "X" || spot == "O"}
+end
+
+def draw?
+end
+
+def over?
+end
+
+def winner
+end 

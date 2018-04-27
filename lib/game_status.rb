@@ -20,13 +20,6 @@ def won?(board)
     return false
 
 
-   WIN_COMBINATIONS.all? |win_combo|
-     if win_combo.all? = true
-       return win_combo
-    end
 
-
-
-end
 end
 end
